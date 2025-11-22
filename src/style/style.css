@@ -95,6 +95,7 @@ header nav ul li a:hover {
 
 /* HERO */
 header > div {
+    margin-top: 3%;
     text-align: center;
     padding: 100px 20px;
     background-color: #2e7d3291;
@@ -137,6 +138,27 @@ header hr {
     text-align: left;
 }
 
+.comoFunciona .cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.comoFunciona .card {
+    flex: 1;              
+    max-width: 260px;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    width: 260px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
 /* SEÇÃO 1 */
 section {
     padding: 20px 10px;
@@ -166,7 +188,14 @@ section div > div {
     width: 80px;
     height: 70px;
     margin: 0 auto;
-    margin-bottom: 1%;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.fundoIcone img {
+    width: 35px;  
+    height: auto;
 }
 
 section h3 {
@@ -301,4 +330,15 @@ footer li {
 footer ul li a {
     text-decoration: none;
     color: #000;
+}
+
+@media (max-width: 768px) {
+    .comoFunciona .cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .comoFunciona .card {
+        width: 90%;
+    }
 }
