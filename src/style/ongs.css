@@ -1,0 +1,193 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    padding-top: 85px;
+    background-color:#FFFFFF;
+    color: #333;
+}
+
+/* CABEÇALHO */
+header {
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: rgb(14, 13, 13);
+    padding-bottom: 40px;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+header nav div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header nav img {
+    width: 45px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color:#f3f3f3;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: .3s;
+    font-size: 16px;
+}
+
+.icone {
+    font-weight: bold;
+}
+
+#amigaIcone {
+    color: #2E7D32;
+}
+
+.botao-1 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.botao-2 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.botao-3 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+.botao-4 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+header nav ul li a:hover {
+    color: #333;
+}
+
+header a {
+    text-decoration: none;
+    padding: 12px 28px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #2E7D32;
+    font-weight: bold;
+    margin: 0 10px;
+    transition: .3s;
+}
+
+header a:hover {
+    background-color: #c9c9c9;
+    color: #333;
+}
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+    font-weight: 550;
+    background-color: #d4d4d4;
+    color: 000;
+    padding: 50px 50px;
+}
+
+.icone{
+    display: flex;
+    align-items: center;
+}
+
+footer .icone {
+    gap: 10px;
+    margin-bottom: 4%;
+}
+
+.icone img{
+    width: 45px;
+}
+
+footer h2 {
+    color: #2E7D32;
+}
+
+.contatos p {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.contatos img{
+    width: 22px;
+}
+
+footer ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 3px;
+    transition: color 0.3s ease;
+}
+
+footer ul li a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 0%;
+    background-color: #2E7D32;
+    transition: width 0.3s ease;
+}
+
+footer ul li a:hover::after {
+    width: 100%;
+}
+
+footer > div {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+footer ul {
+    list-style: none;
+    margin: 2%;
+}
+
+footer li {
+    margin-bottom:3%;
+}
+
+.contatos p {
+    margin: 2%;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #000;
+}

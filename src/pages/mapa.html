@@ -1,25 +1,40 @@
 <!DOCTYPE html>
-<html lang="pt-BR
-">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mapa ONGs</title>
-</head>
 
+    <!-- FAVICONS -->
+    <link rel="icon" href="/src/images/favicon.ico" />
+
+    <!-- PNGs para navegadores -->
+    <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon-16x16.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png" />
+
+    <!-- Android / Chrome -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/src/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="/src/images/android-chrome-512x512.png" />
+
+    <!-- iOS / Apple -->
+    <link rel="apple-touch-icon" href="/src/images/apple-touch-icon.png" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="/src/style/mapa.css">
+    <title>Mapa das ONGs - Mão Amiga</title>
+</head>
 <body>
     <header>
         <nav>
-            <div>
-                <img src="/src/images/icons/iconeMao.png" alt="Mão Amiga">
-                <span>Mão <span id="">Amiga</span></span>
+            <div class="icone">
+                <img src="/src/images/icons/iconeMao.png" alt="Mão Amiga" id="logo">
+                <span>Mão <span id="amigaIcone">Amiga</span></span>
             </div>
             <ul>
-                <li><a href="">Início</a></li>
-                <li><a href="">ONGs</a></li>
-                <li><a href="">Mapa</a></li>
-                <li><a href="">Sou uma ONG</a></li>
+                <li><a href="/index.html" class="botao-1">Início</a></li>
+                <li><a href="/src/pages/ongs.html" class="botao-2">ONGs</a></li>
+                <li><a href="/src/pages/mapa.html" class="botao-3">Mapa</a></li>
+                <li><a href="/src/pages/cadastroOng.html" class="botao-4">Sou uma ONG</a></li>
             </ul>
         </nav>
     </header>
@@ -107,25 +122,27 @@
     <footer>
         <div>
             <div>
-                <img src="" alt="">
-                <span>Mão Amiga</span>
+                <div class="icone">
+                    <img src="/src/images/icons/iconeMao.png" alt="Mão Amiga" id="logo">
+                    <span>Mão <span id="amigaIcone">Amiga</span></span>
+                </div>
                 <p>Conectando pessoas solidárias com ONGs locais para transformar vidas na sua comunidade.</p>
             </div>
 
             <div>
                 <h2>Navegação</h2>
                 <ul>
-                    <li><a href="">Inívio</a></li>
-                    <li><a href="">Ver ONGs</a></li>
-                    <li><a href="">Mapa</a></li>
-                    <li><a href="">Cadastrar ONG</a></li>
+                    <li><a href="/index.html">Início</a></li>
+                    <li><a href="/src/pages/ongs.html">Ver ONGs</a></li>
+                    <li><a href="/src/pages/mapa.html">Mapa</a></li>
+                    <li><a href="/src/pages/cadastroOng.html">Cadastrar ONG</a></li>
                 </ul>
             </div>
 
-            <div>
+            <div class="contatos">
                 <h2>Contato</h2>
-                <p><img src="" alt="">email@exemplo.com</p>
-                <p><img src="" alt="">Recife - Pe </p>
+                <p><img src="/src/images/icons/iconeEmail.png" alt="email">email@exemplo.com</p>
+                <p><img src="/src/images/icons/iconeLocal.png" alt="localização">Recife - Pe </p>
             </div>
 
             <div>
