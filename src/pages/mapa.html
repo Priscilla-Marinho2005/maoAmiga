@@ -40,14 +40,19 @@
     </header>
 
     <main>
-        <h1>Mapa de ONGs</h1>
-        <p>Visualize as organizações próximas a você no mapa interativo</p>
+        <div class="cabecalho">
+            <h1>Mapa de <span id="ONGs">ONGs</span>ONGs</h1>
+            <p>Visualize as organizações próximas a você no mapa interativo</p>
+        </div>
 
-        <div class="mapa"></div>
+        <div class="mapa">
+            <p>MAPA</p>
+        </div>
 
-        <h2>ONGs Cadastradas:</h2>
+        <h2 id="titulo">ONGs Cadastradas:</h2>
 
-        <div class="ongsContainer">
+        <section>
+            <div class="ongsContainer">
                 <!-- ONG 1 -->
                 <div class="ong">
                     <h2>ONG 1</h2>
@@ -61,19 +66,19 @@
                         <p>voluntários</p>
                     </div>
 
-                    <div>
+                    <div class="enderecos">
                         <ul>
-                            <li><img src="" alt=""> email@exemplo.com</li>
-                            <li><img src="" alt="">Endereço - UF</li>
+                            <li><img src="/src/images/icons/iconeEmail.png" alt="Email"> email@exemplo.com</li>
+                            <li><img src="/src/images/icons/iconeLocal.png" alt="Endereço">Endereço - UF</li>
                         </ul>
                     </div>
 
-                    <button>Ver Detalhes <img src="" alt=""></button>
+                    <button>Ver Detalhes</button>
                 </div>
 
                 <!-- ONG 2 -->
                 <div class="ong">
-                    <h2>ONG 1</h2>
+                    <h2>ONG 2</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis amet voluptate dolorum
                         laudantium commodi voluptas facilis eius. Veniam similique repellat id dolor incidunt quas
                         eaque, molestiae nostrum ipsa reprehenderit?</p>
@@ -84,19 +89,19 @@
                         <p>voluntários</p>
                     </div>
 
-                    <div>
+                    <div class="enderecos">
                         <ul>
-                            <li><img src="" alt=""> email@exemplo.com</li>
-                            <li><img src="" alt="">Endereço - UF</li>
+                            <li><img src="/src/images/icons/iconeEmail.png" alt="Email"> email@exemplo.com</li>
+                            <li><img src="/src/images/icons/iconeLocal.png" alt="Endereço">Endereço - UF</li>
                         </ul>
                     </div>
 
-                    <button>Ver Detalhes <img src="" alt=""></button>
+                    <button>Ver Detalhes</button>
                 </div>
 
                 <!-- ONG 3 -->
                 <div class="ong">
-                    <h2>ONG 1</h2>
+                    <h2>ONG 3</h2>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam quis amet voluptate dolorum
                         laudantium commodi voluptas facilis eius. Veniam similique repellat id dolor incidunt quas
                         eaque, molestiae nostrum ipsa reprehenderit?</p>
@@ -107,16 +112,17 @@
                         <p>voluntários</p>
                     </div>
 
-                    <div>
+                    <div class="enderecos">
                         <ul>
-                            <li><img src="" alt=""> email@exemplo.com</li>
-                            <li><img src="" alt="">Endereço - UF</li>
+                            <li><img src="/src/images/icons/iconeEmail.png" alt="Email"> email@exemplo.com</li>
+                            <li><img src="/src/images/icons/iconeLocal.png" alt="Endereço">Endereço - UF</li>
                         </ul>
                     </div>
 
-                    <button>Ver Detalhes <img src="" alt=""></button>
+                    <button>Ver Detalhes</button>
                 </div>
             </div>
+        </section>
     </main>
 
     <footer>
