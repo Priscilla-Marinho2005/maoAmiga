@@ -7,15 +7,16 @@
 }
 
 body {
-    background-color: #fafafa;
+    background-color:#FFFFFF;
     color: #333;
 }
 
 /* CABEÇALHO */
 header {
-    background: linear-gradient(135deg, #4CAF50, #2E7D32);
-    color: white;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: rgb(14, 13, 13);
     padding-bottom: 40px;
+    position: relative;
 }
 
 header nav {
@@ -41,12 +42,42 @@ header nav ul {
     gap: 25px;
 }
 
+nav {
+    background-color:#33333383;
+}
+
 header nav ul li a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     transition: .3s;
+    font-size: 16px;
 }
+
+
+.botao-1 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+
+.botao-2 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+
+.botao-3 {
+    background-color: #2E7D32;
+    color: white;
+}
+
+
+.botao-4 {
+    background-color: #2E7D32;
+    color: white;
+}
+    
 
 header nav ul li a:hover {
     opacity: 0.7;
@@ -90,6 +121,10 @@ header hr {
     background-color: #ffffff44;
 }
 
+.parte-1 {
+    text-align: left;
+}
+
 /* SEÇÃO 1 */
 section {
     padding: 60px 40px;
@@ -99,20 +134,24 @@ section h2 {
     margin-bottom: 20px;
     font-size: 1.8rem;
     color: #2E7D32;
+    text-align: center;
 }
 
 section div > div {
     margin-top: 30px;
+    text-align: center;
 }
 
 section img {
     width: 60px;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 section h3 {
     font-size: 1.2rem;
     margin-bottom: 10px;
+    text-align: center;
 }
 
 /* SEÇÃO "COMO FUNCIONA" */
@@ -136,11 +175,11 @@ main section:nth-of-type(2) img {
 main section:nth-of-type(3) {
     text-align: center;
     padding: 80px 40px;
-    background-color: #e8f5e9;
+    background-color: #ffffff;
 }
 
 main section:nth-of-type(3) div div a {
-    background-color: #4CAF50;
+    background-color: #2E7D32;
     color: white;
     padding: 12px 25px;
     margin: 0 10px;
