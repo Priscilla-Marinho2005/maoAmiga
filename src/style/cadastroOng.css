@@ -137,6 +137,168 @@ header a:hover {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
+
+/* cadastroOng.css - estilo do formulário */
+
+/* Reset/geraís já definidos no seu CSS principal, mas mantemos seletores específicos aqui */
+.cadastro-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 100%);
+}
+
+/* Card branco */
+.card-form {
+    width: 100%;
+    max-width: 760px;
+    background: #ffffff;
+    padding: 30px 32px;
+    border-radius: 16px;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.08);
+    margin-top: 20px;
+}
+
+/* Títulos e descrição */
+.cadastro-container h1 {
+    font-size: 2rem;
+    color: #222;
+    margin-bottom: 6px;
+    text-align: center;
+}
+.cadastro-container p {
+    color: #444;
+    text-align: center;
+    margin-bottom: 14px;
+}
+
+/* Card title */
+.card-form h2 {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+    color: #1f2937;
+}
+
+/* Campos do form */
+.form-row {
+    display: flex;
+    gap: 16px;
+}
+
+.field {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 14px;
+}
+
+.field label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1f2937;
+}
+
+.obrigatorio {
+    color: #d9534f;
+    font-weight: 700;
+    margin-left: 6px;
+    font-size: 0.95rem;
+}
+
+/* Inputs e textarea */
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 12px 14px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    background: #fbfbfb;
+    font-size: 15px;
+    outline: none;
+    transition: box-shadow .18s, border-color .18s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #2ecc71;
+    box-shadow: 0 0 0 6px rgba(46,125,50,0.07);
+}
+
+/* Textarea */
+textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+/* Checkbox grid */
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    gap: 10px 20px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Botões */
+.botoes-form {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btn-cancelar {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: 1px solid #d1d5db;
+    background: #fff;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.btn-cancelar:hover {
+    background: #f3f4f6;
+}
+
+.btn-enviar {
+    padding: 10px 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    font-weight: 800;
+    color: #fff;
+    background: linear-gradient(135deg, #2ecc71 0%, #2E7D32 100%);
+}
+
+/* hover enviar */
+.btn-enviar:hover {
+    transform: translateY(-1px);
+    opacity: 0.96;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-form { padding: 22px; max-width: 520px; }
+    .checkbox-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 480px) {
+    .card-form { padding: 18px; margin: 12px; }
+    .checkbox-grid { grid-template-columns: 1fr; }
+    .botoes-form { flex-direction: column-reverse; gap: 10px; align-items: stretch; }
+    .btn-enviar, .btn-cancelar { width: 100%; }
+}
+
+
+
+
 /* FOOTER */
 footer {
     font-size: 14px;

@@ -46,14 +46,56 @@
         </nav>
     </header>
 
-    <main>
-        <h1>Cadastre sua ONG</h1>
-        <p>Preencha os dados abaixo e comece a receber ajuda da sua comunidade</p>
+    <main class="cadastro-container">
+    <h1>Cadastre sua ONG</h1>
+    <p>Preencha os dados abaixo e comece a receber ajuda da sua comunidade</p>
 
-        <div>
-            <form action=""></form>
-        </div>
-    </main>
+    <div class="card-form">
+        <h2>Informações da Organização</h2>
+
+        <form id="formOng" action="" novalidate>
+            <div class="field">
+                <label for="nomeOng">Nome da ONG <span class="obrigatorio">*</span></label>
+                <input type="text" id="nomeOng" name="nomeOng" placeholder="Ex: ONG Esperança" required>
+            </div>
+
+            <div class="field">
+                <label for="descricao">Descrição <span class="obrigatorio">*</span></label>
+                <textarea id="descricao" name="descricao" placeholder="Conte sobre o trabalho..." required></textarea>
+            </div>
+
+            <div class="field">
+                <label for="email">E-mail de contato <span class="obrigatorio">*</span></label>
+                <input type="email" id="email" name="email" placeholder="contato@suaong.org.br" required>
+            </div>
+
+            <div class="field">
+                <label for="endereco">Endereço completo <span class="obrigatorio">*</span></label>
+                <input type="text" id="endereco" name="endereco" placeholder="Rua, número, bairro, cidade" required>
+            </div>
+
+            <div class="field">
+                <label>Do que vocês precisam? <span class="obrigatorio">*</span></label>
+                <div class="checkbox-grid">
+                    <label><input type="checkbox" name="necessidade" value="alimentos"> Alimentos</label>
+                    <label><input type="checkbox" name="necessidade" value="roupas"> Roupas</label>
+                    <label><input type="checkbox" name="necessidade" value="voluntarios"> Voluntários</label>
+                    <label><input type="checkbox" name="necessidade" value="material-escolar"> Material Escolar</label>
+                    <label><input type="checkbox" name="necessidade" value="medicamentos"> Medicamentos</label>
+                    <label><input type="checkbox" name="necessidade" value="material-esportivo"> Material Esportivo</label>
+                    <label><input type="checkbox" name="necessidade" value="livros"> Livros</label>
+                    <label><input type="checkbox" name="necessidade" value="brinquedos"> Brinquedos</label>
+                </div>
+            </div>
+
+            <div class="botoes-form">
+                <button type="button" class="btn-cancelar" id="btnCancelar">Cancelar</button>
+                <button type="submit" class="btn-enviar">Cadastrar ONG</button>
+            </div>
+        </form>
+    </div>
+</main>
+
 
     <footer>
         <div>
