@@ -1,13 +1,11 @@
 # 🌟 Mão Amiga — Conectando Pessoas & ONGs
 O Mão Amiga é um site desenvolvido para facilitar o contato entre ONGs, voluntários e doadores.
 Feito como trabalho acadêmico, o projeto utiliza HTML, CSS e JavaScript para entregar uma interface simples, intuitiva, organizada e responsiva.
----
 
 ## 🚀 Sobre o Projeto
 Em um mundo barulhento, nem sempre quem precisa ser ouvido consegue espaço. O Mão Amiga nasce para resolver isso:
 um portal onde organizações sociais podem se apresentar, exibir necessidades reais e receber apoio.
 E onde pessoas comuns encontram rapidamente onde podem fazer impacto - seja com doações, tempo ou presença.
----
 
 ## 🧩 Funcionalidades
 ✔️ Página Inicial:
@@ -31,7 +29,6 @@ E onde pessoas comuns encontram rapidamente onde podem fazer impacto - seja com 
 - Ícones personalizados
 - Favicon e imagens para diferentes dispositivos
 - Identidade visual consistente em todas as páginas
----
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -39,7 +36,6 @@ E onde pessoas comuns encontram rapidamente onde podem fazer impacto - seja com 
 - **CSS3** — Estilização responsiva e moderna
 - **JavaScript** — Interatividade (menu, navegação, comportamentos)
 - Arquitetura limpa em pastas (pages, style, script, images)
----
 
 ## 🗂️ Estrutura do Projeto
 A organização foi feita para manter tudo modular e claro:
@@ -73,7 +69,6 @@ src/
 
 index.html
 README.md
----
 
 ## 🎯 Objetivo Acadêmico
 O projeto foi desenvolvido como parte de um trabalho da academico, com o objetivo de:
@@ -82,7 +77,6 @@ O projeto foi desenvolvido como parte de um trabalho da academico, com o objetiv
 - Demonstrar modularização em HTML, CSS e JS
 - Aplicar organização de pastas semelhante a projetos profissionais
 - Criar uma interface funcional voltada para impacto social
----
 
 ## 📌 Possíveis Evoluções 
 
