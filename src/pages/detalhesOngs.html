@@ -7,16 +7,10 @@
 
     <!-- FAVICONS -->
     <link rel="icon" href="/src/images/favicon.ico" />
-
-    <!-- PNGs para navegadores -->
     <link rel="icon" type="image/png" sizes="16x16" href="/src/images/favicon-16x16.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/src/images/favicon-32x32.png" />
-
-    <!-- Android / Chrome -->
     <link rel="icon" type="image/png" sizes="192x192" href="/src/images/android-chrome-192x192.png" />
     <link rel="icon" type="image/png" sizes="512x512" href="/src/images/android-chrome-512x512.png" />
-
-    <!-- iOS / Apple -->
     <link rel="apple-touch-icon" href="/src/images/apple-touch-icon.png" />
 
     <!-- CSS -->
@@ -47,39 +41,91 @@
     </header>
 
     <main>
-        <section>
-            <button><img src="" alt=""> Voltar para lista</button>
+        <section class="informacoesOng">
+            <a class="bntVoltar" href="/src/pages/ongs.html">
+                <button><img src="/src/images/icons/iconeVoltar.png" alt="voltar"> Voltar para lista</button>
+            </a>
 
-            <h1>ONG 1</h1>
-            <P>Resumo da ONG</P>
-
-            <h2>Como você pode ajudar:</h2>
-            <div>
-                <ul>
-                    <li>comida</li>
-                    <li>roupas</li>
-                </ul>
+            <div class="cabecalho">
+                <h1>ONG 1</h1>
+                <P>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi adipisci praesentium placeat beatae, dignissimos doloremque molestias inventore iusto eos aliquid soluta labore, cupiditate eius necessitatibus? Fugiat quos delectus possimus atque?</P>
             </div>
 
-            <h2>Informações de Contato</h2>
-            <div>
-                <img src="" alt="">
-                <span>Endereço - UF</span>
+            <h2>Como você pode ajudar:</h2>
+            <div class="necessidades">
+                <p>comida</p>
+                <p>roupas</p>
+            </div>
 
-                <img src="" alt="">
-                <span>Email@exemplo.com</span>
+            <div class="informacoes">
+                <h2>Informações de Contato</h2>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="/src/images/icons/iconeLocalizacaoOng.png" alt="Endereço">
+                            <span>Endereço - UF</span>
+                        </li>
+                        <li>
+                            <img src="/src/images/icons/iconeEmailOng.png" alt="Email">
+                            <span>Email@exemplo.com</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
 
         <section class="formulario">
-            <h2>Quero ajudar!</h2>
+            <h2>Quero Ajudar!</h2>
             <p>Preencha o formulário abaixo e a ONG entrará em contato</p>
 
-            <div>
-                <form action="">
+            <div class="form-container">
+                <form action="" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Nome completo</label>
+                        <input 
+                            type="text" 
+                            id="nome" 
+                            name="nome" 
+                            placeholder="Seu nome" 
+                            required
+                        >
+                    </div>
 
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input 
+                            type="email" 
+                            id="email" 
+                            name="email" 
+                            placeholder="seu@email.com" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="telefone">Telefone</label>
+                        <input 
+                            type="tel" 
+                            id="telefone" 
+                            name="telefone" 
+                            placeholder="(11) 99999-9999" 
+                            required
+                        >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem</label>
+                        <textarea 
+                            id="mensagem" 
+                            name="mensagem" 
+                            rows="5" 
+                            placeholder="Como você gostaria de ajudar?" 
+                            required
+                        ></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-enviar">Enviar Mensagem</button>
                 </form>
-                <button>Enviar Mensagem</button>
             </div>
         </section>
     </main>

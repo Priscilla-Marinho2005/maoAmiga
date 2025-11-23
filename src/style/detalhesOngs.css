@@ -138,6 +138,205 @@ header a:hover {
     transform: rotate(-45deg) translate(7px, -7px);
 }
 
+h1 {
+    color: #2E7D32;
+}
+
+.cabecalho {
+    margin: 2% 4%;
+
+}
+
+/* MAIN */
+.bntVoltar button {
+    display: flex;
+    align-items: center;
+    gap: 1%;
+    background-color: #2e7d3291;
+    border: none;
+    margin: 3%;
+    padding: 5px 20px;
+    border-radius: 15px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.bntVoltar button:hover {
+    background-color: #2e7d32bd;
+}
+
+.bntVoltar {
+    text-decoration: none;
+}
+
+.bntVoltar img {
+    width: 15px;
+}
+
+.informacoesOng {
+    width: 60%;
+}
+
+h2 {
+    margin-left: 4%;
+}
+
+.necessidades {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px 15px;
+    margin-left: 3%;
+    margin-bottom: 4%;
+    gap: 8px;
+}
+
+.necessidades p {
+    background: #2E7D32;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 0.85rem;
+}
+
+.informacoes {
+    background-color: #2e7d3291;
+    border-radius: 10px;
+    width: 60%;
+    margin: 4%;
+    padding: 3%;
+}
+
+.informacoes div {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.informacoes img {
+    width: 30px;
+}
+
+.informacoes div ul {
+    display: block;    
+    list-style: none;
+    margin: 5%;
+}
+
+.informacoes ul li {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-weight: bold;
+    margin: 5%;
+    gap: 5%;
+}
+.formulario {
+    background-color: #f8f8f8;
+    padding: 40px;
+    margin: 4%;
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.formulario h2 {
+    color: #2E7D32;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    margin-left: 0;
+}
+
+.formulario > p {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+.form-container {
+    max-width: 600px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2E7D32;
+    box-shadow: 0 0 0 3px rgba(46, 125, 50, 0.1);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #999;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-enviar {
+    width: 100%;
+    background-color: #2E7D32;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-top: 10px;
+}
+
+.btn-enviar:hover {
+    background-color: #1b5e20;
+    transform: translateY(-2px);
+}
+
+.btn-enviar:active {
+    transform: translateY(0);
+}
+
+.informacoesOng,
+.informacoes {
+    transition: width 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+}
+
+.cabecalho {
+    transition: margin 0.3s ease;
+}
+
+.necessidades {
+    transition: margin 0.3s ease, padding 0.3s ease;
+}
+
+.bntVoltar button {
+    transition: all 0.3s ease;
+}
 
 /* FOOTER */
 footer {
@@ -223,6 +422,19 @@ footer ul li a {
     color: #000;
 }
 
+@media (min-width: 1200px) {
+    .formulario {
+        max-width: 1200px;
+        margin: 4% auto;
+    }
+
+    .informacoesOng,
+    .informacoes {
+        max-width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
 /* Tablets e telas médias (768px - 1024px) */
 @media (max-width: 1024px) {
@@ -253,6 +465,43 @@ footer ul li a {
 
     footer {
         padding: 40px 30px;
+    }
+
+    .formulario {
+        padding: 35px 30px;
+        margin: 4%;
+    }
+
+    .formulario h2 {
+        font-size: 1.7rem;
+    }
+
+    .informacoesOng,
+    .informacoes {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 11px 14px;
+    }
+
+    .btn-enviar {
+        padding: 14px 28px;
+    }
+
+    .cabecalho {
+        margin: 3% 4%;
+    }
+
+    h2 {
+        margin-left: 4%;
+    }
+
+    .necessidades {
+        margin-left: 3%;
     }
 }
 
@@ -369,6 +618,91 @@ footer ul li a {
     footer > div {
         grid-template-columns: 1fr;
         gap: 30px;
+    }
+
+    .formulario {
+        padding: 30px 20px;
+        margin: 4% 2%;
+    }
+
+    .formulario h2 {
+        font-size: 1.5rem;
+    }
+
+    .formulario > p {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .informacoesOng,
+    .informacoes {
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .form-container {
+        max-width: 100%;
+    }
+
+    .form-group {
+        margin-bottom: 18px;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+        margin-bottom: 7px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px 12px;
+        font-size: 0.95rem;
+    }
+
+    .form-group textarea {
+        min-height: 100px;
+    }
+
+    .btn-enviar {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    .cabecalho {
+        margin: 2% 3%;
+    }
+
+    .cabecalho h1 {
+        font-size: 1.7rem;
+    }
+
+    .cabecalho p {
+        font-size: 0.95rem;
+    }
+
+    h2 {
+        margin-left: 3%;
+        font-size: 1.4rem;
+    }
+
+    .necessidades {
+        margin-left: 2%;
+        padding: 12px;
+    }
+
+    .necessidades p {
+        font-size: 0.85rem;
+    }
+
+    .bntVoltar button {
+        margin: 3%;
+        padding: 10px 18px;
+        font-size: 0.95rem;
+    }
+
+    .informacoes ul li {
+        font-size: 0.95rem;
     }
 }
 
@@ -514,6 +848,8 @@ footer ul li a {
     .contatos img {
         width: 18px;
     }
+
+    
 }
 
 /* Telas muito pequenas (até 360px) */
@@ -558,4 +894,33 @@ footer ul li a {
     main section:nth-of-type(2) {
         padding: 30px 20px;
     }
+
+    .formulario {
+        padding: 25px 15px;
+        margin: 4% 3%;
+    }
+
+    .formulario h2 {
+        font-size: 1.3rem;
+    }
+
+    .formulario > p {
+        font-size: 0.9rem;
+    }
+
+    .form-group label {
+        font-size: 0.9rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 0.9rem;
+    }
+
+    .btn-enviar {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
 }
+
