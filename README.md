@@ -12,19 +12,29 @@ E onde pessoas comuns encontram rapidamente onde podem fazer impacto - seja com 
 - Apresentação clara do propósito do projeto
 - Chamada para ação direcionando voluntários e ONGs
 - Seção “Como Funciona” com explicação visual dos passos
+
+
 ✔️ Listagem de ONGs:
 - Cards com nome, descrição, necessidades, e contatos
 - Navegação simples e organizada
+
+
 ✔️ Mapa das ONGs:
 - Estrutura pronta para integrar mapa interativo
 - Listagem de ONGs abaixo do mapa
 - Visual limpo e padronizado com o restante do site
+
+
 ✔️ Página de Detalhes da ONG:
 - Layout padrão para mostrar informações completas
 - Ideal para expansão futura com dados dinâmicos
+
+
 ✔️ Navegação Responsiva:
 - Menu colapsado para mobile
 - Ícone de hambúrguer funcional via JavaScript
+
+
 ✔️ Sistema Visual Unificado
 - Ícones personalizados
 - Favicon e imagens para diferentes dispositivos
