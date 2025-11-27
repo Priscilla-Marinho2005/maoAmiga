@@ -1,5 +1,5 @@
 
-// Menu Hambúrguer
+// MENU HAMBUERGER: 
 const menuToggle = document.getElementById('menuToggle');
 const navMenu = document.getElementById('navMenu');
 const body = document.body;
@@ -36,3 +36,59 @@ document.addEventListener('click', (e) => {
         }
     }
 });
+
+// FILTRO:
+const campoBusca = document.querySelector(".campoBusca input");
+const menuCausas = document.querySelector(".menuCausas");
+const botoesCausas = document.querySelectorAll(".menuCausas p");
+const verMais = document.querySelector(".verMais");
+const ongs = document.querySelectorAll(".ong");
+const contador = document.querySelector(".filtro > div > p");
+
+// DROPDOWN:
+verMais.addEventListener("click", () => {
+    menuCausas.classList.toggle("oculto");
+});
+
+botoesCausas.forEach(causa => {
+    causa.addEventListener("click", () => {
+        const filtroNecessidade = causa.textContent.trim().toLowerCase();
+        filtrar(filtroNecessidade, campoBusca.value.toLowerCase());
+        menuCausas.classList.add("oculto");
+    });
+});
+
+// FILTRAGEM:
+campoBusca.addEventListener("input", () => {
+    filtrar("", campoBusca.value.toLowerCase());
+});
+
+function filtrar(necessidade, texto) {
+    let total = 0;
+
+    ongs.forEach(ong => {
+        const nomeOng = ong.querySelector("h2").textContent.toLowerCase();
+        const necessidadesLista = [...ong.querySelectorAll(".necessidades p")].map(p => p.textContent.toLowerCase());
+
+        let aparece = true;
+
+        // Filtro por nome ou necessidade
+        if (texto) {
+            const contemNome = nomeOng.includes(texto);
+            const contemNecessidade = necessidadesLista.some(n => n.includes(texto));
+            aparece = contemNome || contemNecessidade;
+        }
+
+        // Filtro por necessidade do menu
+        if (necessidade) {
+            aparece = necessidadesLista.includes(necessidade);
+        }
+
+        ong.style.display = aparece ? "grid" : "none";
+
+        if (aparece) total++;
+    });
+
+    contador.textContent = `${total} ONGs encontradas`;
+}
+
