@@ -230,6 +230,49 @@ h1 {
     color: #555;
 }
 
+/* BOTÃO VER MAIS */
+
+.verMais {
+    position: relative; 
+}
+
+.topoFiltro {
+    position: relative;
+}
+
+.menuCausas {
+    position: absolute;
+    top: 100%; 
+    left: 0; 
+    margin-top: 8px;
+    background: #fff;
+    border: 1px solid #cfcfcf;
+    border-radius: 12px;
+    padding: 10px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    width: 180px;
+    z-index: 50;
+}
+
+.menuCausas p {
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.menuCausas p:hover {
+    background: #eee;
+}
+
+.oculto {
+    display: none;
+}
+ 
+
 /* MAIN */
 .ongsContainer {
     width: 90%;
